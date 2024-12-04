@@ -69,7 +69,7 @@ func astTypeFromNode(n *node, opts options) ast.Expr {
 	case nodeBoolType:
 		resultType = ast.NewIdent("bool")
 	case nodeIntType:
-		resultType = ast.NewIdent("int")
+		resultType = ast.NewIdent("int64")
 	case nodeFloatType:
 		resultType = ast.NewIdent("float64")
 	case nodeStringType:
